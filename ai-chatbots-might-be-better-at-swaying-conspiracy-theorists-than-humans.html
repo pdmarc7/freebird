@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AI chatbots might be better at swaying conspiracy theorists than humans | The Freedom  Project</title>
+
+	<meta name="description" content="">
+
+	<!-- Open Graph meta tags (for Facebook, LinkedIn, etc.) -->
+	<meta property="og:title" content="AI chatbots might be better at swaying conspiracy theorists than humans">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://cdn.arstechnica.net/wp-content/uploads/2020/10/qanon2-760x380.jpg">
+	<meta property="og:url" content="https://arstechnica.com/?p=2048587">
+
+	<!-- Twitter Card meta tags (for Twitter) -->
+	<meta name="twitter:card" content="https://cdn.arstechnica.net/wp-content/uploads/2020/10/qanon2-760x380.jpg">
+	<meta name="twitter:title" content="AI chatbots might be better at swaying conspiracy theorists than humans">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="https://cdn.arstechnica.net/wp-content/uploads/2020/10/qanon2-760x380.jpg">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+	<!-- Include Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<style>
+		.alegreya-sans-thin {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-thin-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-light {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-light-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-regular {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-regular-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-medium {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-medium-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-bold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-bold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-extrabold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-extrabold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-black {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-black-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+
+		.roboto-thin {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.roboto-light {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.roboto-regular {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.roboto-medium {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.roboto-bold {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.roboto-black {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.roboto-thin-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.roboto-light-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.roboto-regular-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-medium-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.roboto-bold-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.roboto-black-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+		.poppins-regular {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.poppins-medium {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.poppins-regular-italic {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-condensed-regular {
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		h1, h2, h3, h4, h5{
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;		}
+		}
+
+		p{
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+	</style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP5N1WD9F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PPP5N1WD9F');
+    </script>
+
+</head>
+<body>
+	<section>
+		<!-- As a link -->
+		<nav class="navbar navbar-dark bg-dark fixed-top">
+		  <div class="container-fluid">
+		    <a class="navbar-brand roboto-condensed-regular" href="https://orion.pages.dev">The Freedom Project</a>
+		  </div>
+		</nav>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-12 mt-5 d-flex justify-content-center align-items-center flex-column" id="title-container">
+					<h3 class="alegreya-sans-medium text-center">AI chatbots might be better at swaying conspiracy theorists than humans</h3>
+					<!--<p class="roboto-medium text-secondary mb-0">Authors</p>-->
+					<!--
+						<p class="alegreya-sans-regular mt-0 text-secondary mb-0">By Jennifer Ouellette, physicist Sean M. Carroll, their two cats</p>
+					--->
+					<p class="alegreya-sans-regular mt-0 text-secondary">12 September, 2024</p>
+
+				</div>
+
+
+
+				<div class="col-12 mt-2 mb-5 alegreya-sans-light d-flex justify-content-center" id="image-container">
+					<img src="https://cdn.arstechnica.net/wp-content/uploads/2020/10/qanon2-760x380.jpg" class="img-fluid shadow" style="max-height: 280px; object-fit: cover; border-radius: 10px; border: none">
+				</div>
+
+				<div class="col-12 mb-3 alegreya-sans-regular" id="secondary-keyword-summary" style="font-size: 18px">
+					<div>
+                                    
+ 
+
+   
+
+
+
+
+ 
+<p>Belief in conspiracy theories is rampant, particularly in the US, where some estimates suggest as much as 50 percent of the population believes in at least one outlandish claim. And those beliefs are notoriously difficult to debunk. Challenge a committed conspiracy theorist with facts and evidence, and they'll usually just double down&#8212;a phenomenon psychologists usually attribute to <a href="https://en.wikipedia.org/wiki/Motivated_reasoning#:~:text=Motivated%20reasoning%20is%20a%20cognitive,how%20new%20information%20is%20perceived.">motivated reasoning</a>, i.e., a biased way of processing information.</p>
+<p>A <a href="http://www.science.org/doi/10.1126/science.adq1814">new paper</a> published in the journal Science is challenging that conventional wisdom, however. Experiments in which an AI chatbot engaged in conversations with people who believed at least one conspiracy theory showed that the interaction significantly reduced the strength of those beliefs, even two months later. The secret to its success: the chatbot, with its access to vast amounts of information across an enormous range of topics, could precisely tailor its counterarguments to each individual.</p>
+<p>"These are some of the most fascinating results I've ever seen," co-author Gordon Pennycook, a psychologist at Cornell University, said during a media briefing. "The work overturns a lot of how we thought about conspiracies, that they're the result of various psychological motives and needs. [Participants] were remarkably responsive to evidence. There's been a lot of ink spilled about being in a post-truth world. It's really validating to know that evidence does matter. We can act in a more adaptive way using this new technology to get good evidence in front of people that is specifically relevant to what they think, so it's a much more powerful approach."</p>                                                                         
+                                                                                
+<p>When confronted with facts that challenge a deeply entrenched belief, people will often seek to preserve it rather than <a href="https://thinklikesocrates.com/2020/08/09/update-your-priors/">update their priors</a> (in Bayesian-speak) in light of the new evidence. So there has been a good deal of pessimism lately about ever reaching those who have plunged deep down the rabbit hole of conspiracy theories, which are notoriously persistent and "pose a serious threat to democratic societies," per the authors. Pennycook and his fellow co-authors devised an alternative explanation for that stubborn persistence of belief.</p>
+<h2>Bespoke counter-arguments</h2>
+<p>The issue is that "conspiracy theories just vary a lot from person to person," said co-author Thomas Costello, a psychologist at American University who is also affiliated with MIT. "They're quite heterogeneous. People believe a wide range of them and the specific evidence that people use to support even a single conspiracy may differ from one person to another. So debunking attempts where you try to argue broadly against a conspiracy theory are not going to be effective because people have different versions of that conspiracy in their heads."</p>
+<p>By contrast, an AI chatbot would be able to tailor debunking efforts to those different versions of a conspiracy. So in theory a chatbot might prove more effective in swaying someone from their pet conspiracy theory.</p>
+<p>To test their hypothesis, the team conducted a series of experiments with 2,190 participants who believed in one or more conspiracy theories. The participants engaged in several personal "conversations" with a large language model (GPT-4 Turbo) in which they shared their pet conspiracy theory and the evidence they felt supported that belief. The LLM would respond by offering factual and evidence-based counter-arguments tailored to the individual participant. GPT-4 Turbo's responses were professionally fact-checked, which showed that 99.2 percent of the claims it made were true, with just 0.8 percent being labeled misleading, and zero as false. (You can try your hand at interacting with the debunking chatbot <a href="https://www.debunkbot.com/conspiracies">here</a>.)</p>                                                                         
+                                                                                
+ 
+<p>Participants first answered a series of open-ended questions about the conspiracy theories they strongly believed and the evidence they relied upon to support those beliefs. The AI then produced a single-sentence summary of each belief, for example, "9/11 was an inside job because X, Y, and Z." Participants would rate the accuracy of that statement in terms of their own beliefs and then filled out a questionnaire about other conspiracies, their attitude toward trusted experts, AI, other people in society, and so forth.</p>
+<p>Then it was time for the one-on-one dialogues with the chatbot, which the team programmed to be as persuasive as possible. The chatbot had also been fed the open-ended responses of the participants, which made it better to tailor its counter-arguments individually. For example, if someone thought 9/11 was an inside job and cited as evidence the fact that jet fuel doesn't burn hot enough to melt steel, the chatbot might counter with, say, the <a href="https://www.nist.gov/world-trade-center-investigation/study-faqs/wtc-towers-investigation">NIST report</a> showing that steel loses its strength at much lower temperatures, sufficient to weaken the towers' structures so that it collapsed. Someone who thought 9/11 was an inside job and cited demolitions as evidence would get a different response tailored to that.</p>
+<p>Participants then answered the same set of questions after their dialogues with the chatbot, which lasted about eight minutes on average. Costello et al. found that these targeted dialogues resulted in a 20 percent decrease in the participants' misinformed beliefs&#8212;a reduction that persisted even two months later when participants were evaluated again.</p>
+ 
+
+                                                 
+         
+
+            
+            
+                            </div>
+				</div>
+
+				<!--<div class="col-12 mb-3 alegreya-sans-light d-flex justify-content-start" id="secondary-keyword-summary">
+					<a class="btn btn-dark btn-lg shadow" href='https://arstechnica.com/?p=2048587'><div class="d-flex"><p class="me-2 mb-0">Continue Reading</p> <i class="bi bi-arrow-right-circle"></i></div></a>
+				</div>-->
+
+
+				<!--<div class="col-12 mb-4 roboto-condensed-regular mt-4">
+					
+				</div>-->
+			</div>
+
+		</div>
+	</section>
+
+	<section id="recentArticlesSection">
+
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-12">
+				<div class="d-flex justify-content-center py-1">
+						<p class="alegreya-sans-medium text-center ms-2" style="font-size: 18px; color: grey;">The Freedom Project - &copy; <span id="currentYear"></span> 😌 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	   <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Find the span element with the id 'currentYear'
+        const yearElement = document.getElementById('currentYear');
+        
+        // Set the text content of the span element to the current year
+        yearElement.textContent = currentYear;
+    </script>
+
+	<!-- Bootstrap Bundle from CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- jQuery from CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+				$.getJSON("https://raw.githubusercontent.com/pdmarc7/thefreedomproject/main/data.json", function(data){
+						//console.log(data)
+
+						var randomSelectedArticles = getRandomElements(data, 6)
+
+					$('#recentArticlesSection').append(
+						$('<div>').addClass('container').append(
+							$('<div>').addClass('row').append(
+								$('<div>').addClass('col-12').append(
+									$('<p>').addClass('h3 alegreya-sans-medium mb-2').text('Recent international news')
+								),
+
+								buildRandomArticleArr(randomSelectedArticles)
+							)
+						)
+					)
+				});
+
+				function getRandomElements(arr, n) {
+				    // Shuffle array using Fisher-Yates shuffle algorithm
+				    for (let i = arr.length - 1; i > 0; i--) {
+				        const j = Math.floor(Math.random() * (i + 1));
+				        [arr[i], arr[j]] = [arr[j], arr[i]];
+				    }
+
+				    // Return the first n elements
+				    return arr.slice(0, n);
+				}
+
+
+
+				function buildArticleCard(article){
+					return $('<div>').addClass('card').append(
+
+						$('<img>').attr({
+							'src': article["top_image"],
+							'alt': ''
+						}).addClass('card-img-top'),
+
+						$('<div>').addClass('card-body').append(
+							$('<p>').addClass('h5 card-title alegreya-sans-medium').append(`${article.title}`),
+							$('<a>').attr({
+								'href': `http://${window.location.hostname}:${window.location.port}`+'/'+article.url
+							}).addClass("btn btn-dark").append('Read More')
+						)
+					)
+				}
+
+				function buildRandomArticleArr(selectedArticles){
+					var articles = []
+
+					for (const n of selectedArticles){
+						articles.push(
+							$('<div>').addClass('col-12 col-md-4 mb-4').append(
+								buildArticleCard(n)
+							)
+						)
+					}
+
+					return articles
+				}
+
+		})
+	</script>
+
+
+	<!-- GSAP and ScrollTrigger from CDN -->
+	<!--<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>-->
+    <script>
+
+    </script>
+
+</body>
+</html>
